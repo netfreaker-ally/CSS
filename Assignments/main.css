@@ -1,0 +1,25 @@
+.main-box {
+  background-color: aqua;
+  width: 250px;
+  border: 2px solid black;
+  padding: 5px 10px 5px 45px;
+  margin: 5px 10px 10px 12px;
+}
+.width-increasing {
+  height: 100vh;
+}
+.width-increasing {
+  height: 300px;
+  width: 50%;
+  visibility: hidden;
+}
+.main-box {
+  display: inline-block;
+}
+
+.main-box:last-of-type:hover,
+.main-box:last-of-type:active {
+  color: white;
+  border-radius: 4px;
+  background-color: darkkhaki;
+}

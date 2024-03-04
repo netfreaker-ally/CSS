@@ -1,0 +1,214 @@
+#product-overview {
+  /* background: linear-gradient(to top, rgba(80, 68, 16, 0.6) 10%, transparent),
+    url("freedom.jpg") center/ cover no-repeat border-box, #ff1b68; */
+  /* background-image: url("freedom.jpg");
+  background-size: cover;
+  background-position: left 10% top 20%; */
+  /* background-repeat: no-repeat;
+  background-origin: border-box;
+  background-clip: border-box; */
+  /* background-attachment: scroll; */
+  /* background-image: linear-gradient(180deg, red ,  blue, transparent); */
+
+  /* background-image: radial-gradient(ellipse  farthest-side 40px 50px,red, blue,yellow); */
+  background: url("freedom.jpg");
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  background-origin: border-box;
+  width: 100vw;
+  height: 33vh;
+  /* padding: 10px; */
+
+  position: relative;
+  /* border: 5px dashed red; */
+}
+
+#product-overview h1 {
+  color: white;
+  font-family: "Anton", sans-serif;
+  /* position: relative;
+  top: 390px;
+  left: 20px; for the second one*/
+  position: absolute;
+  /* top: 390px;
+  left: 20px; for the third*/
+  top: 63%;
+  left: 5%;
+  font-size: 1.6rem;
+
+  /* for the fourth */
+}
+/* @media (min-width: 40rem) , (orientation: portrait) simply or operator  */
+/* @media (min-width: 40rem) and (orientation: landscape)  */
+@media (min-width: 40rem) and (min-height: 40rem) {
+  #product-overview {
+    height: 40vh;
+    background-position: 50% 15%;
+  }
+  #product-overview h1 {
+    font-size: 3rem;
+  }
+}
+
+.section-title {
+  color: #2ddf5c;
+  text-align: center;
+}
+
+.plan {
+  background-color: #d5ffdc;
+  text-align: center;
+  padding: 2rem;
+  margin: 0.5rem 0rem;
+
+  width: 100%;
+}
+.plan__highlighted {
+  background-color: #19b84c;
+  color: white;
+  /* box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5); */
+}
+.plan__annotation {
+  background-color: white;
+  color: #19b84c;
+
+  padding: 8px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+}
+/* h1 {
+    font-family: sans-serif;
+} */
+.plan__title {
+  color: #2ddf5c;
+}
+.plan__price {
+  color: rgb(85, 85, 85);
+}
+.plan__highlighted .plan__title {
+  color: white;
+}
+.plan__highlighted .plan__price {
+  color: #0e4f1f;
+}
+ul.plan__annotation2 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.plan__annotation2 li {
+  margin: 0.5rem 0rem;
+}
+@media (min-width: 40rem) {
+  .plan__lists {
+    width: 100%;
+
+    text-align: center;
+  }
+  .plan {
+    width: 30%;
+    display: inline-block;
+    vertical-align: middle;
+    min-width: 15rem;
+    max-width: 25rem;
+  }
+
+  .plan__highlighted {
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+}
+#key-features {
+  background-color: #ff1b68;
+  margin-top: 80px;
+  padding: 16 px;
+}
+#key-features .section-title {
+  color: white;
+  margin: 32ox;
+}
+/* #key-features li {
+  display: inline-block;
+  padding: 67px;
+  text-align: center;
+  font-weight: bold;
+} */
+.key-features__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.key-feature__image {
+  background: #ffcede;
+  width: 128px;
+  height: 128px;
+  border: 2px solid #424242;
+  border-radius: 50%;
+  margin: auto;
+  padding: 20px;
+}
+.key-feature__description {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+}
+@media (min-width: 40rem) {
+  .key-feature {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    max-width: 25rem;
+  }
+}
+.modal {
+  position: fixed;
+  display: none;
+  z-index: 200;
+  top: 20%;
+  left: 30%;
+  width: 40%;
+  background: white;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.modal__title {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+.modal__actions {
+  text-align: center;
+}
+
+.modal__action {
+  border: 1px solid #0e4f1f;
+  background: #0e4f1f;
+  text-decoration: none;
+  color: white;
+  font: inherit;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.modal__action:hover,
+.modal__action:active {
+  background: #2ddf5c;
+  border-color: #2ddf5c;
+}
+
+.modal__action--negative {
+  background: red;
+  border-color: red;
+}
+
+.modal__action--negative:hover,
+.modal__action--negative:active {
+  background: #ff5454;
+  border-color: #ff5454;
+}

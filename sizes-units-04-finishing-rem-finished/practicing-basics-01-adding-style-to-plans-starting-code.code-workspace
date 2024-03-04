@@ -1,0 +1,14 @@
+{
+  "folders": [
+	{
+		"path": "../practicing-basics-01-adding-style-to-plans-starting-code"
+	},
+	{
+		"path": "."
+	}
+],
+  "settings": {
+    "liveServer.settings.port": 5501,
+    "liveServer.settings.multiRootWorkspaceName": "sizes-units-04-finishing-rem-finished"
+  }
+}
